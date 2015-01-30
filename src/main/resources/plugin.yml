@@ -1,0 +1,4 @@
+main: me.hypernatho.playerdataremover.PlayerDataRemover
+name: PlayerDataRemover
+author: HyperNatho
+version: 1.0
