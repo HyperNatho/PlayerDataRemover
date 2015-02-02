@@ -10,6 +10,10 @@
 
     <repositories>
         <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
             <id>oss.sonatype.org</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
@@ -18,11 +22,14 @@
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
+            <artifactId>spigot-api</artifactId>
             <version>1.8-R0.1-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/spigot-1.8-R0.1-SNAPSHOT.jar</systemPath>
-        </dependency>
+        </dependency><!--Spigot-API-->
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.8-R0.1-SNAPSHOT</version>
+        </dependency><!--Bukkit API-->
 
         <dependency>
             <groupId>org.projectlombok</groupId>
